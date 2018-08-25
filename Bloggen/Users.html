@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blogen Admin Area</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-sm py-0 navbar-dark bg-dark">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">Bloggen</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div id="main-navbar" class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item px-3"><a href="index.html" class="nav-link">Dashboard</a></li>
+					<li class="nav-item px-3"><a href="posts.html" class="nav-link ">Posts</a></li>
+					<li class="nav-item px-3"><a href="Categories.html" class="nav-link">Categories</a></li>
+					<li class="nav-item px-3 active"><a href="users.html" class="nav-link">Users</a></li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown px-3">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-user"></i> Welcome Mohsin
+						</a>
+						<div class="dropdown-menu">
+							<a href="profile.html" class="dropdown-item">
+								<i class="fa fa-user-circle"></i> Profile
+							</a>
+							<a href="setting.html" class="dropdown-item">
+								<i class="fa fa-gear"></i> Settings
+							</a>
+						</div>
+					</li>
+					<li class="nav-item px-3">
+						<a href="login.html" class="nav-link">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main header -->
+	<header id="main-header" class="py-2 bg-primary text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1><i class="fa fa-user"></i> Users</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Actions -->
+
+	<section id="action" class="py-4 mb-4 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ml-auto">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<button class="btn btn-warning"> Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- POSTS -->
+	
+	<section id="posts">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<h4>Users</h4>
+						</div>
+						<div class="card-body">
+							<table class="table table-striped">
+								<thead class="thead-inverse">
+									<tr>
+										<th>#</th>
+										<th>Name</th>
+										<th>Email</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td scope="row">1</td>
+										<td>Mohsin Ashraf</td>
+										<td>15140094@gift.edu.pk</td>
+									</tr>
+									<tr>
+										<td scope="row">2</td>
+										<td>Ahsan Ali</td>
+										<td>15140006@gift.edu.pk</td>
+									</tr>
+									<tr>
+										<td scope="row">3</td>
+										<td>Business</td>
+										<td>September, 31th 2017</td>
+									</tr>
+									<tr>
+										<td scope="row">4</td>
+										<td>M.Mohsin Qamar Khan</td>
+										<td>15140104@gift.edu.pk</td>
+									</tr>
+									<tr>
+										<td scope="row">5</td>
+										<td>Haider Ali T</td>
+										<td>15140103@gift.edu.pk</td>
+									</tr>
+								</tbody>
+							</table>
+							<nav class="ml-4">
+								<ul class="pagination">
+									<li class="page-item"><a href="#" class="page-link disabled">Previous</a></li>
+									<li class="page-item active"><a href="#" class="page-link ">1</a></li>
+									<li class="page-item"><a href="#" class="page-link">2</a></li>
+									<li class="page-item"><a href="#" class="page-link">3</a></li>
+									<li class="page-item"><a href="#" class="page-link">Next</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+
+	<footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="lead text-center">Copyright &copy; Blogen</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+
+	<!-- Enabling the skeditor -->
+	<script>
+		CKEDITOR.replace("post-editor");
+	</script>
+</body>
+</html>

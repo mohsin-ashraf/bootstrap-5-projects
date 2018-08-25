@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blogen Admin Area</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-sm py-0 navbar-dark bg-dark">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">Bloggen</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div id="main-navbar" class="collapse navbar-collapse">
+				 
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main header -->
+	<header id="main-header" class="py-2 bg-primary text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1><i class="fa fa-user"></i> BloginAdmin</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Actions -->
+
+	<section id="action" class="py-4 mb-4 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ml-auto">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<button class="btn btn-primary"> Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- LOGIN -->
+	
+	<section id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<div class="card">
+						<div class="card-header">
+							<h4>Account Login</h4>
+						</div>
+						<div class="card-body">
+							<form action="index.html" class="form">
+								<div class="form-group">
+									<label for="email" class="form-label">Email</label>
+									<input type="email" class="form-control">
+								</div>
+
+								<div class="form-group">
+									<label for="password" class="form-label">Email</label>
+									<input type="password" class="form-control">
+								</div>
+
+
+								<button class="btn btn-primary btn-block" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+
+	<footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="lead text-center">Copyright &copy; Blogen</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+
+	<!-- Enabling the skeditor -->
+	<script>
+		CKEDITOR.replace("post-editor");
+	</script>
+</body>
+</html>
